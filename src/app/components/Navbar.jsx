@@ -13,7 +13,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <div  className="flex items-end">
-          <a href="#home"><Image src={logopic} loading="lazy" alt="Logo" className="h-14 w-auto" />
+          <a href="#home"><Image src={logopic} alt="Logo" className="h-14 w-auto" />
           </a>
           <a href="#home"><p className="ml-2 text-xl font-bold text-blue-500">Bridgr</p></a>
           
@@ -33,10 +33,10 @@ export default function Navbar() {
 
         {/* Hamburger Button */}
         <button
-          className="md:hidden focus:outline-none sticky z-40"
+          className="md:hidden focus:outline-none"
           onClick={() => setOpen(!open)}
         >
-          <div className="space-y-1 z-40 sticky">
+          <div className="space-y-1">
             <span className="block w-6 h-0.5 bg-black"></span>
             <span className="block w-6 h-0.5 bg-black"></span>
             <span className="block w-6 h-0.5 bg-black"></span>
@@ -46,8 +46,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white shadow sticky top-10 w-full z-99">
-          <ul className=" flex-col space-y-4 px-6 py-4 font-medium">
+        <div className="md:hidden bg-white shadow">
+          <ul className="flex flex-col space-y-4 px-6 py-4 font-medium">
             <li><a href="#home" onClick={() => setOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
             <li><a href="#features" onClick={() => setOpen(false)}>Features</a></li>
