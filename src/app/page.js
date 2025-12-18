@@ -6,7 +6,7 @@ import Features from "./components/Features";
 export default function Home() {
   return (
     <main id="home">
-      <Image src={baner} alt="Banner" className="w-full h-auto" />
+      <Image src={baner} alt="Banner" className="w-full h-full" />
       <About />
       <Features />
     </main>
