@@ -16,11 +16,12 @@ export default function About() {
 
   return (
     <> 
+    <main>
     {/* About Section for desktop */}
       <div id='about' className=' hidden md:flex   scroll-mt-50 relative bg-white  border-b-2 border-gray-400 border overflow-hidden '>
         <Image src={aboutpic}  alt="About Image" className="w-full hidden md:block overflow-hidden md:h-full" />
         <div className=' top-12 lg:left-115 xl:left-120 2xl:left-120 md:left-60 sm:left-60 left-19  absolute  '>
-            <div data-aos="fade-up">   <h2 className=' sm:text-2xl md:text-4xl font-bold text-black top-0 md:top-10 md:left-10   '>Bridgr  Library Manager App</h2></div>
+            <div data-aos="fade-up">   <h2 className=' sm:text-2xl md:text-4xl font-bold text-blue-500 top-0 md:top-10 md:left-10   '>One app. Complete library control.</h2></div>
  </div>
         <div data-aos="fade-left"className='absolute hidden lg:block lg:top-30 bg-blue-400  lg:right-31 flex  p-4 text-white     lg:w-100 lg:h-35 bg-blue-400 rounded-4xl text-justify text-wrap text-balance shadow-lg '>
           <p className='text-wrap mt-3'><b>Our Library Management App </b> is a complete solution designed to streamline and automate library operations.</p>
@@ -50,11 +51,14 @@ export default function About() {
       <div id='about' className=' md:hidden relative scroll-mt-50  bg-white   mt-7 overflow-hidden '>
         <div data-aos="fade-up" className='  top-3 overflow-hidden'>   <h2 className=' text-5xl  font-bold text-blue-400 leading-15   text-center   '>One app <br />  Complete <br /> library <br />control.</h2></div>
         <div></div>
-      <div data-aos="fade-right">   <Image src={mobpic1}  alt="About Image" className="w-full md:hidden overflow-hidden md:h-full " /></div>
-        </div>
-
-
-        </section>
+      <div data-aos="fade-right" className='relative overflow-hidden border ' >   <Image src={mobpic1}  alt="About Image" className="w-full md:hidden  " />
+      <p className='text-center absolute top-73 text-md text-wrap p-4'> Our Library Management App is a complete solution designed to streamline and automate library operations.</p>
+      </div>
+ </div>
+         </section>
+      {/* About Section for mobile end */}
+         <h2 ></h2>
+        </main>
     </>
   )
 }
