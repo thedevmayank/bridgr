@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import aboutpic from '../../../public/Hand and iPhone 16 Pro.svg'
+import mobpic1 from '../../../public/vecteezy_e-learning-online-education-at-home-modern-vector_6317680.svg'
 import Image from 'next/image'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,13 +15,14 @@ export default function About() {
 }, []);
 
   return (
-    <>
-      <div id='about' className='scroll-mt-50 relative bg-white  border-b-2 border-gray-400 border overflow-hidden  '>
-        <Image src={aboutpic}  alt="About Image" className="  overflow-hidden w-full md:h-full" />
-        <div className='absolute top-12 lg:left-115 xl:left-120 2xl:left-120 md:left-60 sm:left-60 left-19 overflow-hidden '>
-            <div data-aos="fade-up">   <h2 className=' sm:text-2xl md:text-4xl font-bold text-black top-0 md:top-10 md:left-10  '>Bridgr  Library Manager App</h2></div>
+    <> 
+    {/* About Section for desktop */}
+      <div id='about' className=' hidden md:flex   scroll-mt-50 relative bg-white  border-b-2 border-gray-400 border overflow-hidden '>
+        <Image src={aboutpic}  alt="About Image" className="w-full hidden md:block overflow-hidden md:h-full" />
+        <div className=' top-12 lg:left-115 xl:left-120 2xl:left-120 md:left-60 sm:left-60 left-19  absolute  '>
+            <div data-aos="fade-up">   <h2 className=' sm:text-2xl md:text-4xl font-bold text-black top-0 md:top-10 md:left-10   '>Bridgr  Library Manager App</h2></div>
  </div>
-        <div data-aos="fade-left"className='absolute hidden md:block lg:top-30 bg-blue-400  lg:right-31 flex  p-4 text-white     lg:w-100 lg:h-35 bg-blue-400 rounded-4xl text-justify text-wrap text-balance shadow-lg '>
+        <div data-aos="fade-left"className='absolute hidden lg:block lg:top-30 bg-blue-400  lg:right-31 flex  p-4 text-white     lg:w-100 lg:h-35 bg-blue-400 rounded-4xl text-justify text-wrap text-balance shadow-lg '>
           <p className='text-wrap mt-3'><b>Our Library Management App </b> is a complete solution designed to streamline and automate library operations.</p>
         </div>  
         <div data-aos="fade-right"className='absolute hidden lg:block lg:top-70 bg-blue-400  lg:left-11 p-4 text-white    lg:w-100 lg:h-35 bg-blue-400 rounded-4xl text-justify text-wrap text-balance shadow-lg'>
@@ -41,6 +43,18 @@ export default function About() {
           <p className='text-wrap mt-3'> <b>follow-ups,</b> and a centralized dashboard that gives full control, transparency, and improved productivity for library owners and staff.</p> 
           </div>
       </div>
+      {/* About Section for desktop end */}
+
+      {/* About Section for mobile */}
+      <section>
+      <div id='about' className=' md:hidden relative scroll-mt-50  bg-white   mt-7 overflow-hidden '>
+        <div data-aos="fade-up" className='  top-3 overflow-hidden'>   <h2 className=' text-5xl  font-bold text-blue-400 leading-15   text-center   '>One app <br />  Complete <br /> library <br />control.</h2></div>
+        <div></div>
+      <div data-aos="fade-right">   <Image src={mobpic1}  alt="About Image" className="w-full md:hidden overflow-hidden md:h-full " /></div>
+        </div>
+
+
+        </section>
     </>
   )
 }
