@@ -23,7 +23,7 @@ export default function Navbar() {
         
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 font-medium">
+        <ul className="hidden md:flex space-x-8 font-medium text-black">
           <li className="hover:text-blue-500 transition"><a href="#home">Home</a></li>
           <li className="hover:text-blue-500 transition"><a href="#about">About</a></li>
           <li className="hover:text-blue-500 transition"><a href="#features">Features</a></li>
