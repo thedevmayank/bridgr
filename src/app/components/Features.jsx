@@ -30,31 +30,31 @@ export default function Features() {
                <Image src={seatPic} alt="Seat Management" height={74} width={74}></Image>
             <p>Seat Management</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black ' data-aos="fade-up"> 
                <Image src={personPic} alt="Member Management" height={74} width={74}></Image>
                <p>Member Management</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={shiftPic} alt="shift Management" height={74} width={74}></Image>
                <p>Shift Management</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={smsPic} alt="SMS Management" height={74} width={74}></Image>
                <p>Auto SMS Reminder</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={enquiry} alt="Enquiry Management" height={74} width={74}></Image>
               <p>Enquiry Management</p>
             </div>
-             <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+             <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={revenue} alt="Revenue Management" height={74} width={74}></Image>
                <p>Track Income</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={expense} alt="Expense Management" height={74} width={74}></Image>
                <p>Expense Management</p>
             </div>
-            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200' data-aos="fade-up"> 
+            <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-black' data-aos="fade-up"> 
                <Image src={activity} alt="Activity Management" height={74} width={74}></Image>
               <p>Track Activity</p>
             </div>
