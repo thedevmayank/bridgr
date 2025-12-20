@@ -39,7 +39,7 @@ export default function Navbar() {
             <Link href="#features">Features</Link>
           </li>
           <li className="hover:text-blue-500 transition">
-            <Link href="#pricing">Pricing</Link>
+            <Link href="#gallery">Gallery</Link>
           </li>
           <li className="hover:text-blue-500 transition">
             <Link href="#contact">Contact</Link>
@@ -83,8 +83,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#pricing" onClick={() => setOpen(false)}>
-              Pricing
+            <Link href="#gallery" onClick={() => setOpen(false)}>
+              Gallery
             </Link>
           </li>
           <li>
