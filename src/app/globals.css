@@ -10,13 +10,6 @@ body {
   @apply bg-white text-black;
 }
 
-/* ---------------- SLICK SLIDER CUSTOM STYLES ---------------- */
 
-#slideshow .slick-prev:before,
-#slideshow .slick-next:before {
-  opacity: 0.75;
-  color: #0f24e3;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-}
+
+

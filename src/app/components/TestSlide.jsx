@@ -1,59 +1,83 @@
 "use client";
-import React from "react";
-import Slider from "react-slick";
-import Image from "next/image";
-import screenShot1 from "../../../public/Preview-removebg-preview.png";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import Image from "next/image";
+import React from "react";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import screenShot1 from "../../../public/Preview.svg";
+import screenShot2 from "../../../public/Preview (1).svg";
+import screenShot3 from "../../../public/Preview (2).svg";
+import screenShot4 from "../../../public/Preview (3).svg";
+import screenShot5 from "../../../public/Preview (4).svg";
+
 
 export default function SimpleSlider() {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    swipe: true,
-    draggable: true,
-swipe: true,
 
-    // ✅ DESKTOP DEFAULT
-    slidesToShow: 4,
-    slidesToScroll: 1,
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
-    responsive: [
-      {
-        breakpoint: 1024, // < 1024px
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768, // < 768px
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480, // < 480px (mobile)
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
-    <div className="overflow-hidden max-w-6xl mx-auto px-4 shadow-2xl items-center rounded-lg">
-      <Slider {...settings}>
-        {[1,2,3,4,5].map((_, i) => (
-          <div key={i} className="px-3">
-            <Image src={screenShot1} alt="Slide" />
+    <div className="max-w-6xl mx-auto  p-9">
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        loop={true} // ✅ loop everywhere
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        spaceBetween={20}
+        slidesPerView={4}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 },
+        }}
+      >
+     
+        <SwiperSlide>
+          <div className=" " data-aos="fade-up">
+            <Image src={screenShot1} alt="Screenshot 1" className="object-contain h-full" />
           </div>
-        ))}
-      </Slider>
+         </SwiperSlide>   
+
+         <SwiperSlide>
+          <div data-aos="fade-up">
+            <Image src={screenShot2} alt="Screenshot 2" className="object-contain h-full" />
+          </div>
+         </SwiperSlide> 
+
+
+          <SwiperSlide>
+          <div data-aos="fade-up">
+            <Image src={screenShot3} alt="Screenshot 3" className="object-contain h-full" />
+          </div>
+         </SwiperSlide> 
+
+         
+          <SwiperSlide>
+          <div data-aos="fade-up">
+            <Image src={screenShot4} alt="Screenshot 4" className="object-contain h-full" />
+          </div>
+         </SwiperSlide> 
+         
+          <SwiperSlide>
+          <div data-aos="fade-up">
+            <Image src={screenShot5} alt="Screenshot 5" className="object-contain h-full" />
+          </div>
+         </SwiperSlide> 
+     
+      </Swiper>
     </div>
   );
 }
