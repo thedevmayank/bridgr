@@ -13,12 +13,10 @@ export default function Gallery() {
     }, []);
   return (
     <main>
-        <section id='gallery' className='w-full bg-white border p-3 overflow-hidden scroll-mt-70' >
+        <section id='gallery' className='w-full bg-white  p-3 overflow-hidden scroll-mt-70' >
         <h1 className='text-center text-3xl text-blue-500 font-bold'>App Screenshots</h1>
         </section>
-        <section className='overflow-hidden'>
        
-        </section>
     </main> 
   )
 }
