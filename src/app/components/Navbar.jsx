@@ -42,7 +42,7 @@ export default function Navbar() {
             <Link href="#gallery">Gallery</Link>
           </li>
           <li className="hover:text-blue-500 transition">
-            <Link href="#contact">Contact</Link>
+            <Link href="#support">Contact</Link>
           </li>
         </ul>
 

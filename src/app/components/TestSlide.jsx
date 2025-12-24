@@ -24,19 +24,20 @@ export default function SimpleSlider() {
   useEffect(() => {
     Aos.init();
   }, []);
-
+    
 
   return (
-    <div className="max-w-6xl mx-auto  p-9">
+    <main>
+    <div className="max-w-6xl mx-auto  p-9 shadow-xl ">
       <Swiper
         modules={[Autoplay, Pagination]}
-        loop={true} // ✅ loop everywhere
+        loop={true} // ✅ loop everywhere 
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        spaceBetween={20}
+        spaceBetween={15}
         slidesPerView={4}
         breakpoints={{
           0: { slidesPerView: 1 },
@@ -79,5 +80,6 @@ export default function SimpleSlider() {
      
       </Swiper>
     </div>
+    </main>
   );
 }

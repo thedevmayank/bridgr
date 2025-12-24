@@ -5,6 +5,7 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import TestSlide from "./components/TestSlide";
+import Support from "./components/Support";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <Gallery /> 
       <TestSlide/>
+      <Support/>
      
     </main>
   );
