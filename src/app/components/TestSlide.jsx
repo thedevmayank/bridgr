@@ -16,6 +16,8 @@ export default function SimpleSlider() {
     autoplay: true,
     autoplaySpeed: 2000,
     swipe: true,
+    draggable: true,
+swipe: true,
 
     // ✅ DESKTOP DEFAULT
     slidesToShow: 4,
@@ -44,7 +46,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="overflow-hidden max-w-6xl mx-auto px-4 shadow-2xl rounded-lg">
+    <div className="overflow-hidden max-w-6xl mx-auto px-4 shadow-2xl items-center rounded-lg">
       <Slider {...settings}>
         {[1,2,3,4,5].map((_, i) => (
           <div key={i} className="px-3">

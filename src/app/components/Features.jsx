@@ -23,7 +23,7 @@ export default function Features() {
   return (
     <>
     <main>
-      <section id='features' className=' w-full bg-blue-500 overflow-hidden text-sm  '>
+      <section id='features' className=' w-full bg-blue-500 overflow-hidden text-sm p-4 '>
       <h1 data-aos="fade-up" className=' text-3xl text-white capitalize font-bold mt-4 text-center'>Our key Features</h1>
       <div className='grid grid-cols-1 md:grid-cols-4 mx-auto w-[60vw]  text-center mt-4 gap-8 p-3'>
             <div className='flex flex-col  bg-white  items-center rounded-lg shadow-xl p-4 px-1 text-grey-200'  data-aos="fade-up" > 
