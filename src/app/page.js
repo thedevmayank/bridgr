@@ -6,6 +6,8 @@ import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import TestSlide from "./components/TestSlide";
 import Support from "./components/Support";
+import Icons from "./components/Icons";
+import Testform from "./Testform";
 
 
 
@@ -19,6 +21,8 @@ export default function Home() {
       <Gallery /> 
       <TestSlide/>
       <Support/>
+      <Icons/>
+      {/* <Testform/> */}
      
     </main>
   );

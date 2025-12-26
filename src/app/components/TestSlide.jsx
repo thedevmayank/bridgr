@@ -47,7 +47,7 @@ export default function SimpleSlider() {
       >
      
         <SwiperSlide>
-          <div className=" " data-aos="fade-up">
+          <div>
             <Image src={screenShot1} alt="Screenshot 1" className="object-contain h-full" />
           </div>
          </SwiperSlide>   

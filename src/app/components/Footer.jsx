@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import logopic from "@/app/Group 1.png";
 import Image from 'next/image';
